@@ -35,4 +35,9 @@ class BeerClientTest {
         BeerDto beerDto = BeerDto.builder().build();
         beerClient.updateBeer(UUID.randomUUID(), beerDto);
     }
+
+    @Test
+    void deleteBeer() {
+        beerClient.deleteBeer(UUID.randomUUID());
+    }
 }
